@@ -215,7 +215,7 @@ html {
 
 .modal_container {
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   min-height: 200px;
   background-color: #fff;
   position: relative;
@@ -241,7 +241,7 @@ html {
 .modal_container h2 {
   text-transform: uppercase;
   font-size: 2.0rem;
-  margin: 20px 0 5px;
+  margin: 20px 0;
   color: #2F4858;
 }
 
@@ -253,7 +253,7 @@ html {
 
 .modal_container input {
   width: 70%;
-  max-width: 300px;
+  max-width: 200px;
   height: 30px;
   padding: 0 10px;
   border-radius: 5px;
@@ -262,6 +262,7 @@ html {
   font-size: 1.6rem;
   -webkit-box-shadow: -2px 2px 7px 1px #b3b3b3;
           box-shadow: -2px 2px 7px 1px #b3b3b3;
+  margin: 20px 0;
 }
 
 .modal_container button {
