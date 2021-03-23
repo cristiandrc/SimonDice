@@ -1,0 +1,109 @@
+/*---------------------------------------*\
+|    $VARIABLES
+/*---------------------------------------*/
+
+//Colors
+$colorfondo: #333;
+$colorverde: #6da651;
+$colorvioleta: #b337cd;
+$colorceleste: #2d9da9;
+$colornaranja: #de8c35;
+$colorclaro: #b9b9b9de;
+
+$modalFondo: rgba(0,0,0,.7);
+$modalcontenedor: #fff;
+
+$boxShadow: -2px 2px 7px 1px #b3b3b3;
+//Tipografia
+$basefont: 'DM Sans', sans-serif;
+
+////// CLASES //////
+.hide {
+    display: none;
+}
+
+
+
+.main_juego-celeste.light {
+    background-color: #7ed6df;
+}
+
+.main_juego-violeta.light {
+    background-color:  #e056fd;
+}
+
+.main_juego-naranja.light {
+    background-color: #ffbe76;
+}
+
+.main_juego-verde.light {
+    background-color: #badc58;
+}
+
+
+
+////////////////////////////////////////////////////////////////
+//----------------------@mixin----------------------------------
+
+@mixin hoverGame {
+    cursor: pointer;
+
+}
+
+
+@mixin hoverButton {
+    width: 205px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: $basefont;
+    background-color: $colorfondo;
+}
+
+.reset {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    width: 60px;
+    height: 25px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    background-color: $colorclaro;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding-top: 4px;
+    transition: .5s;
+    &:hover {
+        width: calc(60px * 1.2);
+        height: calc(25px * 1.2);
+        padding-top: calc(4px * 1.5);
+    }
+}

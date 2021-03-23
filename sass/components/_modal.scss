@@ -1,0 +1,64 @@
+.modal {
+    background-color: $modalFondo;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+
+    &_container {
+        width: 90%;
+        max-width: 500px;
+        min-height: 200px;
+        background-color: $modalcontenedor;
+        position: relative;
+        margin:0 auto;
+        padding: 0 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 2.0rem;
+            margin: 20px 0 5px;
+            color: #2F4858;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin:10pz 0 20px;
+            color: #2F4858;
+        }
+
+        input {
+            width: 70%;
+            max-width: 300px;
+            height: 30px;
+            padding: 0 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 1.6rem;
+            box-shadow: $boxShadow;
+
+        }
+
+        button {
+            margin: 20px 0;
+            width: 30%;
+            height: 30px;
+            background-color: #5DEC8D;
+            border: none;
+            box-shadow: $boxShadow;
+            &:hover {
+                @include hoverButton;
+            }
+        }
+
+    }
+}
